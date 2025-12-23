@@ -1,24 +1,34 @@
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-4 h-screen justify-center items-center">
-        <h1 className="text-4xl font-bold">devsForFun</h1>
-        <p className="text-muted-foreground">opensource frontend template</p>
+      <section className="flex flex-col gap-4">
+        <Badge variant="outline" className="py-1 px-2 rounded-full border-yellow-500/20 bg-yellow-500/10">
+          <div className="animate-pulse size-2 rounded-full bg-yellow-500 mr-1"></div>
+          <span className='text-yellow-500'>Learning in progress...</span>
+        </Badge>
+        <h2 className="text-4xl font-bold">Learning
+          <br />
+          Machine Learning
+        </h2>
+        <p className="text-lg font-light text-muted-foreground">I&apos;m documenting my machine learning journey from the basics to building real things. Expect notes, small projects, and videos made while learning out loud.</p>
+        <p className="text-lg font-light italic text-muted-foreground">- Charan Manikanta Nalla</p>
         <div className="flex gap-2">
-          <Button variant="outline" disabled>
-            Docs
+          <Button size="lg" variant="outline" asChild>
+            <Link href="https://instagram.com/ml.charan.dev" target="_blank"><FaInstagram /><span className="sr-only">Instagram username:</span> ml.charan.dev</Link>
           </Button>
-          <Button disabled>Get the template</Button>
+          <Button size="lg" asChild>
+            <Link href="/blog">Visit Blog <ArrowRight /></Link>
+          </Button>
         </div>
-        <p className="text-muted-foreground">
-          By{' '}
-          <a href="https://devsforfun.com" className="underline" rel="noopener noreferrer" target="_blank">
-            devsForFun
-          </a>
-        </p>
-      </div>
+      </section>
+
+
     </>
   );
 }
