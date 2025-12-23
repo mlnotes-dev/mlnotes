@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <header className="border-b backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b backdrop-blur-sm sticky top-0 z-50 bg-background/50">
         <div className="max-w-4xl mx-auto py-5 px-3 flex justify-between items-center">
           <Link href="/">
             <h1 className="text-2xl font-bold">ML Notes</h1>
@@ -33,12 +33,12 @@ export default function RootLayout({
         </div>
       </header>
 
-      <main className='max-w-4xl mx-auto py-5 px-3'>
+      <main className='max-w-4xl mx-auto py-5 px-3 space-y-8'>
         {children}
       </main>
 
       <footer className='border-t'>
-        <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-4 md:flex-row md:justify-between md:text-left'>
+        <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-6 md:flex-row md:justify-between md:text-left'>
           <div>
             <h2 className="text-2xl font-medium">ML Notes</h2>
             <p className="text-muted-foreground font-light">Created by <a className="underline text-primary hover:text-blue-500" href="https://charan.dev">Charan Manikanta Nalla</a></p>
@@ -69,7 +69,7 @@ export default function RootLayout({
         </div>
 
         <div className='px-4'>
-          <Separator className="max-w-4xl mx-auto my-4" />
+          <Separator className="max-w-4xl mx-auto" />
         </div>
 
         <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-2 md:flex-row md:justify-between md:text-left'>
