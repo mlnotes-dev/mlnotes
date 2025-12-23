@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'devsForFun opensource frontend template',
-  description: 'devsForFun opensource frontend template',
+  title: 'ML Notes',
+  description: 'ML Notes is a website for Machine Learning Notes, Projects, Videos, Courses, Guides, Tutorials, and more. By a builder. Created by Charan Manikanta Nalla, and powered by devsForFun studio.',
   icons: {
     icon: '/favicon.ico',
   },
