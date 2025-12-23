@@ -41,7 +41,7 @@ export default function RootLayout({
         <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-4 md:flex-row md:justify-between md:text-left'>
           <div>
             <h2 className="text-2xl font-medium">ML Notes</h2>
-            <p className="text-muted-foreground font-light">Created by <a className="underline text-white hover:text-blue-500" href="https://charan.dev">Charan Manikanta Nalla</a></p>
+            <p className="text-muted-foreground font-light">Created by <a className="underline text-primary hover:text-blue-500" href="https://charan.dev">Charan Manikanta Nalla</a></p>
           </div>
 
           <div className="flex gap-4 justify-center">
@@ -74,7 +74,7 @@ export default function RootLayout({
 
         <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-2 md:flex-row md:justify-between md:text-left'>
           <p className="text-muted-foreground font-light">&copy; {new Date().getFullYear()} ML Notes. All rights reserved.</p>
-          <p className="text-muted-foreground font-light">Powered by <a href="https://devsforfun.com" target="_blank" className="underline text-white hover:text-blue-500">devsForFun studio</a></p>
+          <p className="text-muted-foreground font-light">Powered by <a href="https://devsforfun.com" target="_blank" className="underline text-primary hover:text-blue-500">devsForFun studio</a></p>
         </div>
       </footer>
     </>
