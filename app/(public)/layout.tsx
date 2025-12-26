@@ -28,6 +28,11 @@ export default function RootLayout({
                   <Link href="/resources">Resources</Link>
                 </Button>
               </li>
+              <li className="hidden md:block">
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="/projects">Projects</Link>
+                </Button>
+              </li>
             </ul>
           </nav>
         </div>
