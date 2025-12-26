@@ -25,7 +25,7 @@ export default function RootLayout({
               </li>
               <li>
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="/blog/newsletter">Newsletter</Link>
+                  <Link href="/resources">Resources</Link>
                 </Button>
               </li>
             </ul>
