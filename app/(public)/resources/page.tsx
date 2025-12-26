@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { ExternalLinkIcon } from "lucide-react";
 
 interface Resource {
   sectionTitle: string;
@@ -77,14 +78,14 @@ const resources: Resource[] = [
 export default function ResourcesPage() {
   return (
     <>
-      <div className="font-light">
-        <h2 className="text-4xl font-bold">Resources</h2>
+      <div className="font-light text-muted-foreground text-lg">
+        <h2 className="text-4xl font-bold text-primary">Resources</h2>
         <p>Here are some cool resources I found while learning Machine Learning.</p>
         <p>I will keep updating these as I find more cool ones.</p>
       </div>
 
       {resources.map((resource: Resource, index: number) => (
-        <section key={index} className="font-light space-y-4">
+        <section key={index} className="font-light space-y-4 text-lg">
           <h3 className="text-2xl font-bold">{resource.sectionTitle}</h3>
 
           <Separator className="-mt-2" />
@@ -94,7 +95,7 @@ export default function ResourcesPage() {
               <h4 className="text-xl font-bold">{sectionContent.title}</h4>
 
               {sectionContent.listType === "ol" ? (
-                <ol className="list-decimal list-inside space-y-2 my-1">
+                <ol className="list-decimal list-outside pl-6 space-y-2 my-1">
                   {sectionContent.listItems.map((listItem, index) => (
                     <li key={index}>
                       <a
@@ -103,13 +104,13 @@ export default function ResourcesPage() {
                         rel="noopener noreferrer"
                         className="underline hover:text-blue-500 underline-offset-5"
                       >
-                        {listItem.title}
+                        {listItem.title} <sup><ExternalLinkIcon className="size-3 inline" /></sup>
                       </a>
                     </li>
                   ))}
                 </ol>
               ) : (
-                <ul className="list-disc list-inside space-y-2 my-1">
+                <ul className="list-disc list-outside pl-6 space-y-2 my-1">
                   {sectionContent.listItems.map((listItem, index) => (
                     <li key={index}>
                       <a
@@ -118,7 +119,7 @@ export default function ResourcesPage() {
                         rel="noopener noreferrer"
                         className="underline hover:text-blue-500 underline-offset-5"
                       >
-                        {listItem.title}
+                        {listItem.title} <sup><ExternalLinkIcon className="size-3 inline" /></sup>
                       </a>
                     </li>
                   ))}
