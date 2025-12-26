@@ -40,7 +40,7 @@ export default function RootLayout({
       <footer className='border-t'>
         <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col text-center gap-6 md:flex-row md:justify-between md:text-left'>
           <div>
-            <h2 className="text-2xl font-medium">ML Notes</h2>
+            <h2 className="text-2xl font-bold">ML Notes</h2>
             <p className="text-muted-foreground font-light">Created by <a className="underline text-primary hover:text-blue-500" href="https://charan.dev">Charan Manikanta Nalla</a></p>
           </div>
 
