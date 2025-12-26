@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name='impact-site-verification' content='f15a6c5f-9ef2-4ab6-9df2-060df707e749' />
+      </head>
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
