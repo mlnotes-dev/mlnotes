@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
-import { FaInstagram, FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaLinkedin, FaGithub, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 
 export default function RootLayout({
   children,
@@ -53,6 +53,11 @@ export default function RootLayout({
             <Button variant="secondary" size="icon" className='rounded-full' asChild>
               <a href="https://instagram.com/ml.charan.dev" target="_blank">
                 <span className='sr-only'>Instagram</span><FaInstagram />
+              </a>
+            </Button>
+            <Button variant="secondary" size="icon" className='rounded-full' asChild>
+              <a href="https://www.youtube.com/@mlnotes-dev" target="_blank">
+                <span className='sr-only'>YouTube</span><FaYoutube />
               </a>
             </Button>
             <Button variant="secondary" size="icon" className='rounded-full' asChild>
