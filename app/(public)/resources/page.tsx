@@ -15,6 +15,39 @@ interface Resource {
 
 const resources: Resource[] = [
   {
+    sectionTitle: "ML General",
+    sectionContent: [
+      {
+        title: "Google Colab",
+        listType: "ol",
+        listItems: [
+          {
+            title: "Introduction to Google Colab",
+            href: "https://youtu.be/inN8seMm7UI?si=xUpVrJJkrxJVuF8c"
+          }
+        ]
+      },
+      {
+        title: "TensorFlow",
+        listType: "ol",
+        listItems: [
+          {
+            title: "TensorFlow YouTube Channel",
+            href: "https://www.youtube.com/@TensorFlow"
+          },
+          {
+            title: "TensorFlow YouTube Courses Playlists",
+            href: "https://www.youtube.com/@TensorFlow/courses"
+          },
+          {
+            title: "TensorFlow Introduction Video (Why Tensorflow?)",
+            href: "https://youtu.be/yjprpOoH5c8?si=4_oXRb9wozD2WOqv"
+          }
+        ]
+      }
+    ]
+  },
+  {
     sectionTitle: "TinyML",
     sectionContent: [
       {
