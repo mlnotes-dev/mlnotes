@@ -7,7 +7,7 @@ function FeaturedPostCard({ post }: { post: BlogPost }) {
   return (
     <article className="space-y-4">
       <Link href={`/blog/${post.slug}`} className="group block space-y-4">
-        <BlogCoverImage post={post} size="featured" />
+        <BlogCoverImage post={post} />
         <div className="space-y-3">
           <h2 className="text-2xl font-bold leading-tight text-primary transition-colors group-hover:text-blue-500 lg:text-3xl">
             {post.title}
@@ -26,7 +26,7 @@ function SidePostCard({ post }: { post: BlogPost }) {
   return (
     <article>
       <Link href={`/blog/${post.slug}`} className="group block space-y-3">
-        <BlogCoverImage post={post} size="side" />
+        <BlogCoverImage post={post} />
         <div className="space-y-2">
           <h3 className="text-lg font-bold leading-tight text-primary transition-colors group-hover:text-blue-500">
             {post.title}
@@ -42,7 +42,7 @@ function GridPostCard({ post }: { post: BlogPost }) {
   return (
     <article>
       <Link href={`/blog/${post.slug}`} className="group block space-y-3">
-        <BlogCoverImage post={post} size="card" />
+        <BlogCoverImage post={post} />
         <div className="space-y-2">
           <h3 className="text-lg font-bold leading-tight text-primary transition-colors group-hover:text-blue-500">
             {post.title}
@@ -61,7 +61,7 @@ function MobilePostCard({ post }: { post: BlogPost }) {
   return (
     <article>
       <Link href={`/blog/${post.slug}`} className="group block space-y-3">
-        <BlogCoverImage post={post} size="featured" />
+        <BlogCoverImage post={post} />
         <div className="space-y-2">
           <h3 className="text-xl font-bold leading-tight text-primary transition-colors group-hover:text-blue-500">
             {post.title}
