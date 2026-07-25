@@ -138,3 +138,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Blog post body — comfortable reading size (~18px) with centered prose column */
+.blog-post-prose.fw-prose {
+  --fw-content-w: 42rem;
+  max-width: var(--fw-content-w);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.blog-post-prose.fw-prose h2 {
+  font-size: 1.75rem;
+  margin-top: 2.25rem;
+}
+
+.blog-post-prose.fw-prose h3 {
+  font-size: 1.375rem;
+}
+
+.blog-post-prose.fw-prose p,
+.blog-post-prose.fw-prose li {
+  font-size: 1.125rem;
+}
+
+.blog-post-prose.fw-prose blockquote {
+  font-size: 1.0625rem;
+}
