@@ -3,6 +3,7 @@ import { Separator } from '@/components/ui/separator';
 import { siteWideInnerClass } from '@/lib/site-layout';
 import Link from 'next/link';
 import { FaInstagram, FaLinkedin, FaGithub, FaXTwitter, FaYoutube } from 'react-icons/fa6';
+import { NewsletterSubscribeForm } from '@/components/newsletter-subscribe-form';
 
 export default function RootLayout({
   children,
@@ -78,6 +79,22 @@ export default function RootLayout({
             </Button>
           </div>
         </div>
+
+        {process.env.NEXT_PUBLIC_INKFORM_PROJECT_ID ? (
+          <>
+            <div className='px-4'>
+              <Separator className="max-w-4xl mx-auto" />
+            </div>
+            <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col items-center text-center gap-3'>
+              <h3 className="text-lg font-semibold">Get new posts by email</h3>
+              <p className="text-muted-foreground font-light text-sm">No spam, unsubscribe anytime.</p>
+              <NewsletterSubscribeForm
+                projectId={process.env.NEXT_PUBLIC_INKFORM_PROJECT_ID}
+                apiBaseUrl={process.env.NEXT_PUBLIC_INKFORM_PLATFORM_URL ?? 'https://inkform.dev'}
+              />
+            </div>
+          </>
+        ) : null}
 
         <div className='px-4'>
           <Separator className={`${siteWideInnerClass}`} />
