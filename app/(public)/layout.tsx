@@ -83,12 +83,13 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_INKFORM_PROJECT_ID ? (
           <>
             <div className='px-4'>
-              <Separator className="max-w-4xl mx-auto" />
+              <Separator className={`${siteWideInnerClass}`} />
             </div>
-            <div className='max-w-4xl mx-auto py-5 px-3 flex flex-col items-center text-center gap-3'>
+            <div className={`${siteWideInnerClass} py-5 flex flex-col items-center text-center gap-3`}>
               <h3 className="text-lg font-semibold">Get new posts by email</h3>
               <p className="text-muted-foreground font-light text-sm">No spam, unsubscribe anytime.</p>
               <NewsletterSubscribeForm
+                className="w-full max-w-sm"
                 projectId={process.env.NEXT_PUBLIC_INKFORM_PROJECT_ID}
                 apiBaseUrl={process.env.NEXT_PUBLIC_INKFORM_PLATFORM_URL ?? 'https://api.inkform.dev'}
               />
