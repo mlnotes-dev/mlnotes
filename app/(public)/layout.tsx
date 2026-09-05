@@ -90,7 +90,7 @@ export default function RootLayout({
               <p className="text-muted-foreground font-light text-sm">No spam, unsubscribe anytime.</p>
               <NewsletterSubscribeForm
                 projectId={process.env.NEXT_PUBLIC_INKFORM_PROJECT_ID}
-                apiBaseUrl={process.env.NEXT_PUBLIC_INKFORM_PLATFORM_URL ?? 'https://inkform.dev'}
+                apiBaseUrl={process.env.NEXT_PUBLIC_INKFORM_PLATFORM_URL ?? 'https://api.inkform.dev'}
               />
             </div>
           </>

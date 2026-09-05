@@ -19,10 +19,15 @@ type Props = {
  * Newsletter subscribe form. POSTs directly to the Inkform platform's public
  * /api/newsletter/subscribe — no @inkform/framework dependency needed.
  * See docs.inkform.dev/guides/newsletter ("Without the framework").
+ *
+ * apiBaseUrl must be the platform's API origin (api.inkform.dev), not the
+ * apex: the platform routes by host, and the apex serves public content only,
+ * redirecting anything else to the app origin — a POST there never reaches the
+ * subscribe handler.
  */
 export function NewsletterSubscribeForm({
   projectId,
-  apiBaseUrl = 'https://inkform.dev',
+  apiBaseUrl = 'https://api.inkform.dev',
   source = 'footer',
   placeholder = 'you@example.com',
   buttonLabel = 'Subscribe',
